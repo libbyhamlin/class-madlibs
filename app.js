@@ -49,7 +49,6 @@ function madLibIt() {
     const homeInputSpan = document.getElementById('aHome');
     homeInputSpan.textContent = aHome;
 
-  
-
-    const madLibSection = document.getElementById('mad-lib');
+    const showMadLibStory = document.getElementById('madlib-story');
+    showMadLibStory.classList.remove('hidden');
 }
