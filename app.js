@@ -1,35 +1,55 @@
 function madLibIt() {
-    const nameOneInput = document.getElementById('name-one').value;
-    const friendNameInput = document.getElementById('friend-name').value;
-    const animalInput = document.getElementById('animal').value;
-    const adjectiveInput = document.getElementById('adjective').value;
-    const monsterAnimalInput = document.getElementById('monster-animal').value;
-    const verbOneInput = document.getElementById('verb-one').value;
-    const nounOneInput = document.getElementById('noun-one').value;
-    const nounTwoInput = document.getElementById('noun-two').value;
-    const pastVerbInput = document.getElementById('past-verb').value;
-    const homeInput = document.getElementById('home').value;
+    const nameOneInput = document.getElementById('name-one');
+    const nameOne = nameOneInput.Value;
+    const nameOneSpan = document.getElementById('nameOne');
+    nameOneSpan.textContent = nameOne;
 
-    const nameOneSpan = document.getElementById('name-one-span');
-    nameOneSpan.textContent = nameOneInput;
-    const friendNameSpan = document.getElementById('friend-name-span');
-    friendNameSpan.textContent = friendNameInput;
-    const animalSpan = document.getElementById('animal-span');
-    animalSpan.textContent = animalInput;
-    const adjectiveSpan = document.getElementById('adjectiveSpan');
-    adjectiveSpan.textContent = adjectiveSpan;
-    const monsterAnimalSpan = document.getElementById('monster-animal-span');
-    monsterAnimalSpan.textContent = monsterAnimalInput;
-    const verbOneSpan = document.getElementById('verb-one-span');
-    verbOneSpan.textContent = nameOneInput;
-    const nounOneSpan = document.getElementById('noun-one-span');
-    nounOneSpan.textContent = nounOneInput;
-    const nounTwoSpan = document.getElementById('noun-two-span');
-    nounTwoSpan.textContent = nounOneInput;
-    const pastVerbSpan = document.getElementById('past-verb-span');
-    pastVerbSpan.textContent = pastVerbInput;
-    const homeInputSpan = document.getElementById('home-Input-Span');
-    homeInputSpan.textContent = homeInput;
+    const friendNameInput = document.getElementById('friend-name');
+    const friendName = friendNameInput.Value;
+    const friendNameSpan = document.getElementById('friendName');
+    friendNameSpan.textContent = friendName;
+
+    const animalInput = document.getElementById('a-animal');
+    const aAnimal = animalInput.Value;
+    const animalSpan = document.getElementById('aAnimal');
+    animalSpan.textContent = aAnimal;
+
+    const adjectiveInput = document.getElementById('adjective-one');
+    const adjectiveOne = adjectiveInput.value;
+    const adjectiveSpan = document.getElementById('adjectiveOne');
+    adjectiveSpan.textContent = adjectiveOne;
+
+    const monsterAnimalInput = document.getElementById('monster-animal');
+    const monsterAnimal = monsterAnimalInput.value;
+    const monsterAnimalSpan = document.getElementById('monsterAnimal');
+    monsterAnimalSpan.textContent = monsterAnimal;
+
+    const verbOneInput = document.getElementById('verb-one');
+    const verbOne = verbOneInput.value;
+    const verbOneSpan = document.getElementById('verbOne');
+    verbOneSpan.textContent = verbOne;
+
+    const nounOneInput = document.getElementById('noun-one');
+    const nounOne = nounOneInput.value;
+    const nounOneSpan = document.getElementById('nounOne');
+    nounOneSpan.textContent = nounOne;
+
+    const nounTwoInput = document.getElementById('noun-two');
+    const nounTwo = nounTwoInput.value;
+    const nounTwoSpan = document.getElementById('nounTwo');
+    nounTwoSpan.textContent = nounTwo;
+
+    const pastVerbInput = document.getElementById('past-verb');
+    const pastVerb = pastVerbInput.value;
+    const pastVerbSpan = document.getElementById('pastVerb');
+    pastVerbSpan.textContent = pastVerb;
+
+    const homeInput = document.getElementById('a-home');
+    const aHome = homeInput.value;
+    const homeInputSpan = document.getElementById('aHome');
+    homeInputSpan.textContent = aHome;
+
+  
 
     const madLibSection = document.getElementById('mad-lib');
 }
