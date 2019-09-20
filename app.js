@@ -1,23 +1,23 @@
-function madLibIt() {
+function makeMadLib() {
     const nameOneInput = document.getElementById('name-one');
-    const nameOne = nameOneInput.Value;
+    const nameOne = nameOneInput.value;
     const nameOneSpan = document.getElementById('nameOne');
     nameOneSpan.textContent = nameOne;
 
     const friendNameInput = document.getElementById('friend-name');
-    const friendName = friendNameInput.Value;
+    const friendName = friendNameInput.value;
     const friendNameSpan = document.getElementById('friendName');
     friendNameSpan.textContent = friendName;
 
-    const animalInput = document.getElementById('a-animal');
-    const aAnimal = animalInput.Value;
-    const animalSpan = document.getElementById('aAnimal');
-    animalSpan.textContent = aAnimal;
+    const aAnimalInput = document.getElementById('a-animal');
+    const aAnimal = aAnimalInput.value;
+    const aAnimalSpan = document.getElementById('aAnimal');
+    aAnimalSpan.textContent = aAnimal;
 
-    const adjectiveInput = document.getElementById('adjective-one');
-    const adjectiveOne = adjectiveInput.value;
-    const adjectiveSpan = document.getElementById('adjectiveOne');
-    adjectiveSpan.textContent = adjectiveOne;
+    const AdjectiveOneInput = document.getElementById('adjective-one');
+    const adjectiveOne = AdjectiveOneInput.value;
+    const adjectiveOneSpan = document.getElementById('adjectiveOne');
+    adjectiveOneSpan.textContent = adjectiveOne;
 
     const monsterAnimalInput = document.getElementById('monster-animal');
     const monsterAnimal = monsterAnimalInput.value;
@@ -44,10 +44,10 @@ function madLibIt() {
     const pastVerbSpan = document.getElementById('pastVerb');
     pastVerbSpan.textContent = pastVerb;
 
-    const homeInput = document.getElementById('a-home');
-    const aHome = homeInput.value;
-    const homeInputSpan = document.getElementById('aHome');
-    homeInputSpan.textContent = aHome;
+    const aHomeInput = document.getElementById('a-home');
+    const aHome = aHomeInput.value;
+    const aHomeInputSpan = document.getElementById('aHome');
+    aHomeInputSpan.textContent = aHome;
 
     const showMadLibStory = document.getElementById('madlib-story');
     showMadLibStory.classList.remove('hidden');
