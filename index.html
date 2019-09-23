@@ -1,130 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="class-madlibs.css">
-        <title>Madlib Game</title>
-    </head>
-    <body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="class-madlibs.css" />
+    <title>Madlib Game</title>
+  </head>
+  <body>
+    <header>
+      <h1>Spooky</h1>
+    </header>
 
-        <header>
-            <h1>Spooky</h1>
-        </header>
+    <main>
+      <section>
+        <h2>Fill in the blanks to create your very own Madlibs.</h2>
 
-        <main>
-            <section>
-                <h2>Fill in the blanks to create your very own Madlibs.</h2>
+        <p>
+          <label>
+            Write a name:
+            <input id="name-one" />
+          </label>
+        </p>
 
-                <p>
-                    <label>
-                        Write a name:
-                        <input type="name-one">
-                    </label>
-                </p>
+        <p>
+          <label>
+            Write a friends name:
+            <input id="friend-name" />
+          </label>
+        </p>
 
-                <p>
-                    <label>
-                        Write a friends name:
-                        <input type="friend-name">
-                    </label>
-                </p>
+        <p>
+          <label>
+            Type of animal:
+            <input id="animal" />
+          </label>
+        </p>
 
-                <p>
-                    <label>
-                        Type of animal:
-                        <input type="a-animal">
-                    </label>
-                </p>
+        <p>
+          <label>
+            adjective:
+            <input id="adjective-one" />
+          </label>
+        </p>
 
-                <p>
-                    <label>
-                        adjective:
-                        <input type="adjective-one">
-                    </label>
-                </p>
+        <p>
+          <label>
+            Type of monster or animal:
+            <input id="monster-animal" />
+          </label>
+        </p>
 
-                <p>
-                    <label>
-                        Type of monster or animal:
-                        <input type="monster-animal">
-                    </label>
-                </p>
+        <p>
+          <label>
+            Verb:
+            <input id="verb-one" />
+          </label>
+        </p>
 
-                <p>
-                    <label>
-                        Verb:
-                        <input type="verb-one">
-                    </label>
-                </p>
+        <p>
+          <label>
+            noun:
+            <input id="noun-one" />
+          </label>
+        </p>
 
-                <p>
-                    <label>
-                        noun:
-                        <input type="noun-one">
-                    </label>
-                </p>
+        <p>
+          <label>
+            noun:
+            <input id="noun-two" />
+          </label>
+        </p>
 
-                <p>
-                    <label>
-                        noun:
-                        <input type="noun-two">
-                    </label>
-                </p>
+        <p>
+          <label>
+            verb:
+            <input id="past-verb" />
+          </label>
+        </p>
 
-                <p>
-                    <label>
-                        verb:
-                        <input type="past-verb">
-                    </label>
-                </p>
+        <p>
+          <label>
+            Type of home:
+            <input id="a-home" />
+          </label>
+        </p>
 
-                <p>
-                    <label>
-                        Type of home:
-                        <input type="a-home">
-                    </label>
-                </p>
+        <p>
+          <button onclick="makeMadLib()">Madlib it</button>
+        </p>
+      </section>
 
-                <p>
-                    <button onclick="makeMadLib()">Madlib it</button>
-                </p>
+      <section id="madlib-story" class="hidden">
+        <h2>Read your madlib below!</h2>
 
-            </section>
+        <p>
+          One day <span id="name-one-span"></span> and their friend,
+          <span id="friend-name-span"></span> went on a hike with their pet,
+          <span id="animal-span"></span>. Right as they reached summit they
+          heard a growl from within the trees...
+        </p>
 
-            <section id="madlib-story" class="hidden">
-                <h2>Read your madlib below!</h2>
-
-                <p>
-                    One day <span id="name-one-span"></span> and their friend,
-                    <span=
-                        id="friend-name-span"></span>
-                    went on a hike with their pet, <span= id="animal-span"></span>.
-                    Right as
-                    they reached summit they heard a growl from within the
-                    trees...
-                </p>
-
-                <P>
-                    Suddenly, a <span id="adjective-span"></span> <span
-                        id="monster-animal-span"></span>
-                    <span id="verb-one-span"></span> infront of them and yelled,
-                    "I
-                    will crush your <span id="noun-one-span"></span>!"
-                    Terrified, they threw a <span id="noun-two-span"></span> and
-                    <span id="past-verb-span"></span>
-                    back to their <span id="home-span"></span>.
-                </p>
-            </section>
-        </main>
-    </body>
-    <script src="app.js"></script>
+        <P>
+          Suddenly, a <span id="adjective-span"></span>
+          <span id="monster-animal-span"></span>
+          <span id="verb-one-span"></span> infront of them and yelled, "I will
+          crush your <span id="noun-one-span"></span>!" Terrified, they threw a
+          <span id="noun-two-span"></span> and
+          <span id="past-verb-span"></span> back to their
+          <span id="home-span"></span>.
+        </P>
+      </section>
+    </main>
+  </body>
+  <script src="app.js"></script>
 </html>
-
-
-
-
 
 <!-- One day nameOne and their friend, friend-name, went on a hike with their pet,
 [ animal ]. Right as they reached summit they heard a growl up ahead.
